@@ -2,17 +2,21 @@
 using namespace std;
 
 int main() {
-    int houses;
-    cin>>houses;
-
+    int siblings, popsicles;
+    //take input
+    cin>>siblings>>popsicles;
     //your code goes here
+    if(popsicles <= 0 || siblings <= 0){
+        cout<<"invalid";
+    }
     
-  int dollarbill = houses/2;
-  if (houses >=3){      
-        cout<<int((dollarbill/houses)*100)+1;     
-    }
     else{
-        cout<<"Invalid";
+        
+        if(popsicles % siblings==0){
+            cout<<"give away";
+    
     }
-    return 0;
-} 
+        else{
+            cout<<"eat them yourself";
+    }
+    }
